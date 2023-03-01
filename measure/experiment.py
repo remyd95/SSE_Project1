@@ -62,8 +62,7 @@ class Experiment:
 
     def pause(self):
         print('\t Cooldown pause')
-        time.sleep(60)
-        pass
+        time.sleep(30)
 
     def run(self):
         self.setup_env()
