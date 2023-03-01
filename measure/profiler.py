@@ -25,6 +25,26 @@ class Profiler:
         print('Shuffling ' + str(len(self.experiments)) + ' experiments for fair measurements.')
         random.shuffle(self.experiments)
 
+    def raise_priviliges(self):
+        print('\t Raising priviliges to superuser..')
+
+        raise_privilige_process = subprocess.Popen("sudo echo Success",
+                                                   stdin=subprocess.PIPE,
+                                                   stdout=subprocess.PIPE,
+                                                   stderr=subprocess.PIPE,
+                                                   shell=True)
+        raise_privilige_process.communicate()
+
+    def reset_env(self):
+        print('\t Initializing environment..')
+
+        powerprofile_process = subprocess.Popen("powerprofilesctl set balanced",
+                                                stdin=subprocess.PIPE,
+                                                stdout=subprocess.PIPE,
+                                                stderr=subprocess.PIPE,
+                                                shell=True)
+        powerprofile_process.communicate()
+
     def run_experiments(self):
         print('Running experiments:')
         for idx, exp in enumerate(self.experiments):

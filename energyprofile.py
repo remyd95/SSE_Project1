@@ -22,10 +22,14 @@ def main():
         num_experiments = 5
 
     profiler = Profiler()
+
+    profiler.raise_priviliges()
     profiler.create_experiments(num_experiments)
     profiler.shuffle_experiments()
+    profiler.reset_env()
     profiler.warmup()
     profiler.run_experiments()
+
     results = profiler.get_results()
     plot_results(results)
     calculate_significance(results)
