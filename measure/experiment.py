@@ -52,11 +52,11 @@ class Experiment:
         self.energy_consumption = 1 # todo: get energy consumption from file
         self.runtime = benchmark_stop - benchmark_start
 
-    def start_measurement(self):
+    def start_energy_measurement(self):
         # todo enable power measurement
         pass
 
-    def stop_measurement(self):
+    def stop_energy_measurement(self):
         # todo stop power measurement
         pass
 

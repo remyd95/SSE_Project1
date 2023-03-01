@@ -3,11 +3,13 @@ import sys
 from measure.profiler import Profiler
 
 
-def calculate_significants(results):
+def calculate_significance(results):
+    # Optional: calculate significance of the results
     pass
 
 
 def plot_results(results):
+    # TODO: plot the results in violin/boxplot
     print(results)
 
 
@@ -26,7 +28,7 @@ def main():
     profiler.run_experiments()
     results = profiler.get_results()
     plot_results(results)
-    calculate_significants(results)
+    calculate_significance(results)
 
 
 if __name__ == "__main__":
