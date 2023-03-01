@@ -14,7 +14,7 @@ class Profiler:
         self.initialize_results()
 
     def create_experiments(self, num_experiments):
-        print('Creating ' + str(num_experiments) + ' experiments per energy mode.')
+        print('\t Creating ' + str(num_experiments) + ' experiments per energy mode')
 
         for i in range(num_experiments):
             self.experiments.append(Experiment(Type.POWERSAVER))
@@ -22,11 +22,11 @@ class Profiler:
             self.experiments.append(Experiment(Type.PERFORMANCE))
 
     def shuffle_experiments(self):
-        print('Shuffling ' + str(len(self.experiments)) + ' experiments for fair measurements.')
+        print('\t Shuffling ' + str(len(self.experiments)) + ' experiments for fair measurements')
         random.shuffle(self.experiments)
 
     def raise_priviliges(self):
-        print('\t Raising priviliges to superuser..')
+        print('\t Raising priviliges to superuser')
 
         raise_privilige_process = subprocess.Popen("sudo echo Success",
                                                    stdin=subprocess.PIPE,
@@ -36,7 +36,7 @@ class Profiler:
         raise_privilige_process.communicate()
 
     def reset_env(self):
-        print('\t Initializing environment..')
+        print('\t Setting environment to balanced for warmup')
 
         powerprofile_process = subprocess.Popen("powerprofilesctl set balanced",
                                                 stdin=subprocess.PIPE,
@@ -54,7 +54,7 @@ class Profiler:
         print("Finished all experiments.")
 
     def initialize_results(self):
-        print('Initializing result datastructures.')
+        print('Creating result container..')
         self.results.setdefault(Type.POWERSAVER, [])
         self.results.setdefault(Type.BALANCED, [])
         self.results.setdefault(Type.PERFORMANCE, [])

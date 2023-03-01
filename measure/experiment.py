@@ -44,10 +44,10 @@ class Experiment:
                                              stdout=subprocess.PIPE,
                                              stderr=subprocess.PIPE,
                                              shell=True)
-        print('\t\t Starting power measurement..')
+        print('\t\t Starting power measurement')
         powerstat_process.wait()
         time.sleep(5)
-        print('\t\t Starting benchmark task..')
+        print('\t\t Starting benchmark task')
         benchmark_start = time.time()
         benchmark_process.wait()
         benchmark_stop = time.time()
@@ -61,7 +61,7 @@ class Experiment:
         print('\t\t Obtained runtime: ' + str(round(self.runtime, 2)) + 's & Average energy consumption: ' + str(self.energy_consumption) + 'W')
 
     def pause(self):
-        print('\t Pausing 1 min to cool down..')
+        print('\t Cooldown pause')
         time.sleep(60)
         pass
 

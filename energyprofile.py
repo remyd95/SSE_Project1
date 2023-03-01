@@ -23,6 +23,7 @@ def main():
 
     profiler = Profiler()
 
+    print('Creating experiment setup..')
     profiler.raise_priviliges()
     profiler.create_experiments(num_experiments)
     profiler.shuffle_experiments()
