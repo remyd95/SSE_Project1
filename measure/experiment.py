@@ -37,28 +37,28 @@ class Experiment:
 
     def run_benchmark(self):
         print('\t Running benchmark..')
-        self.start_energy_measurement()
+
+        powerstat_process = subprocess.Popen("sudo powerstat 1 60 -R -D -i 90% &", shell=True, stdout=subprocess.PIPE)
         benchmark_process = subprocess.Popen(benchmark_cmd(),
                                              stdin=subprocess.PIPE,
                                              stdout=subprocess.PIPE,
                                              stderr=subprocess.PIPE,
                                              shell=True)
-
+        print('\t\t Starting power measurement..')
+        powerstat_process.wait()
+        time.sleep(5)
+        print('\t\t Starting benchmark task..')
         benchmark_start = time.time()
-        benchmark_process.communicate()
+        benchmark_process.wait()
         benchmark_stop = time.time()
 
-        self.stop_energy_measurement()
-        self.energy_consumption = 1 # todo: get energy consumption from file
+        #Obtain energy consumption in Watts
+        for outputline in powerstat_process.stdout:
+            if "CPU:" in outputline.decode('utf-8'):
+                self.energy_consumption = float(outputline.decode('utf-8').split()[1])
+
         self.runtime = benchmark_stop - benchmark_start
-
-    def start_energy_measurement(self):
-        # todo enable power measurement
-        pass
-
-    def stop_energy_measurement(self):
-        # todo stop power measurement
-        pass
+        print('\t\t Obtained runtime: ' + str(round(self.runtime, 2)) + 's & Average energy consumption: ' + str(self.energy_consumption) + 'W')
 
     def pause(self):
         print('\t Pausing 1 min to cool down..')
@@ -69,4 +69,4 @@ class Experiment:
         self.setup_env()
         self.run_benchmark()
         self.pause()
-        return (self.energy_consumption, self.run_time), self.type
+        return (self.energy_consumption, self.runtime), self.type
