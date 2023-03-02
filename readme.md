@@ -14,10 +14,10 @@
 - Run with 'python3 energyprofile.py <#experiments/mode>'.
 
 ## Manual Preparations
-- Disconnect from the internet.
 - Close all user processes.
 - Disable all notifications.
 - Disable auto screen brightness adjustment.
+- Turn down screen brightness to the lowest level
 - Make sure the laptop is connected to a power supply.
 - Unplug any external devices (USB/Screen/Drives/etc..).
 - Take external factors into account (room temperature adjustments around sunset/sunrise).
