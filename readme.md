@@ -1,12 +1,13 @@
 ## Energy Profile Measurement Tool
 
 ## Requirements
-- Linux OS (Tested on ubuntu)
+- Linux OS (Tested on Ubuntu 22.04)
 - Python3.10
-- TensorFlow
 - CUDA
 - cuDNN
-- perfzero
+- [TensorFlow](https://www.tensorflow.org/install/pip#linux)
+- [perfzero](https://github.com/tensorflow/benchmarks)
+- [powerstat](https://snapcraft.io/install/powerstat/ubuntu)
 
 ## Installation
 - Make sure to have all the requirements installed.
