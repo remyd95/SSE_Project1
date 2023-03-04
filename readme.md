@@ -8,6 +8,10 @@
 - [TensorFlow](https://www.tensorflow.org/install/pip#linux)
 - [perfzero](https://github.com/tensorflow/benchmarks)
 - [powerstat](https://snapcraft.io/install/powerstat/ubuntu)
+- [psutil](https://pypi.org/project/psutil/)
+- [tensorflow-model-optimization](https://www.tensorflow.org/model_optimization/guide/install)
+- [python-bigquery](https://github.com/googleapis/python-bigquery)
+- [cloud-tpu-client](https://pypi.org/project/cloud-tpu-client/)
 
 ## Installation
 - Make sure to have all the requirements installed.

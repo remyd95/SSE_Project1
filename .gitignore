@@ -1,5 +1,5 @@
 # Data
-perfzero/
+benchmarks/perfzero/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
