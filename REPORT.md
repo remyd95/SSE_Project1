@@ -18,7 +18,7 @@ This study investigates the impact of the Ubuntu Power Profiles on the benchmark
 
 ## Related Work
 
-Ubuntu Power Profiles are built into Gnome as the [power-tools-daemon](https://gitlab.freedesktop.org/hadess/power-profiles-d), which offers three different power modes: balanced, power-saver, and performance. It performs a set of actions depending on the profile and the system's highly customizable hardware. For Intel-based machines, it uses [P-state scaling](https://www.kernel.org/doc/html/v5.17/admin-guide/pm/intel_pstat), which can utilise hardware-specific optimizations for energy consumption or performance. 
+Ubuntu Power Profiles are built into Gnome as the [power-tools-daemon](https://gitlab.freedesktop.org/hadess/power-profiles-d), which offers three different power modes: balanced, power-saver, and performance. It performs a set of actions depending on the profile and the system's highly customizable hardware. For Intel-based machines, it uses [P-state scaling](https://www.kernel.org/doc/html/v5.17/admin-guide/pm/intel_pstate.html), which can utilise hardware-specific optimizations for energy consumption or performance. 
 
 There are similar applications like power-tools-daemon, such as the open-source applications [TuneD](https://github.com/redhat-performance/tu) by RedHat, which is designed for Fedora-based systems. Another common application is [TLP](https://github.com/linrunner/TLP) by linrunner, which is specifically designed for battery power saving. All applications are fairly similar in their operations, which is why they are all incompatible to run concurrently on a single machine. 
 
