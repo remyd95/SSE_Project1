@@ -158,13 +158,20 @@ We then computed the percentage change or the pairwise difference between the da
 
 Finally, we computed the Choen's or Cliff's delta, again depending on the normality of the data. Each Cliff's delta result indicated that the difference of the distributions is large, each with a score of 1. In the case of the times of the Balanced and Performance profile, Choen's delta also indicated that the distributions are separated, with a score of 0.985, signifying a separation of almost an entire standard deviation.
 
-### Practical Signifiance 
+### Practical Signifiance and Further Results
 
+What are results show is that the difference in energy saving between the Balanced and Performance profiles are not statistically significant, while the energy savings obtained by the Powersaver profile compared to the other two profiles are significant. Looking at the median difference we can see that the energy savings obtained by the Powersaver profile are almost a half of the entire energy consumptions of the other two profiles. The pairwise difference and the Cliff's delta results confirm this result by indicating that the data for the Powersaver profile is separated by a large factor from the data obtained by the other profiles. 
+
+Looking at the processing time data we also notice that the effect size metrics point at a great degree of separation. However by investigating the mean and median differences we can see that the magnitude of this separations are within a single second. Therefore while statistically significant the results on time do not indicate a clear prefered profile to use in a real world scenario.  
+
+We performed the same tests also for the second run of experiments, with results confirming the ones here presented. Furthermore we executed the same experiment also on CPU in order to see if the results would transfer also to that setting. What we found, again, is that while the Powersaver profile saves significant amounts of energy, no profile dominates the others by a significant magnitude in terms of processing time. 
+
+All our notebooks containing the analysis for each set of experiments can be found at our [github repository](https://github.com/remyd95/SSE_Project1/tree/main/analysis).
 
 ## Discussion
 
 
-The presented work comes with a couple of limitations. The Perfzero TensorFlow benchmark tool requires an internet connection to be able to run. An Internet connection can cause serious distortions in the measurement, for instance, due to background processes that need to sync. Another limitation related to the benchmark tool is that we had to use a synthetic benchmark tool to be able to keep the experiments short. Real-world machine learning training jobs in common scenarios can take several hours to complete. In an ideal experiment, such a real-world training job would be the best choice. Another limitation is that ultimately, the effects of the unwanted side factors cannot be removed. These factors, especially in our setup, can only be minimised. Lastly, the gathered data does not follow a normal distribution for all power mode results. However, it is known that when working with AI applications, the outcome is rarely deterministic and a normal distribution is therefore not feasible.
+The presented work comes with a couple of limitations. The Perfzero TensorFlow benchmark tool requires an internet connection to be able to run. An Internet connection can cause serious distortions in the measurement, for instance, due to background processes that need to sync. Another limitation related to the benchmark tool is that we had to use a synthetic benchmark tool to be able to keep the experiments short. Real-world machine learning training jobs in common scenarios can take several hours to complete. In an ideal experiment, such a real-world training job would be the best choice. Another limitation is that ultimately, the effects of the unwanted side factors cannot be removed. These factors, especially in our setup, can only be minimised. Lastly, the gathered data does not follow a normal distribution for all power mode results. However, it is known that when working with AI applications, the outcome is rarely deterministic and a normal distribution is therefore not always feasible.
 
 
 <!--
@@ -186,6 +193,7 @@ In the context of our research, the power save mode is the most energy-efficient
 - Discussion point: In the context of our research the powersave mode is the most beneficial, however in a real scenario the user might have their display on and background processes running, therefore the longer runtime of the task might actually consume more energy overall 
 -->
 
+Furthermore we found that the difference in time between the profiles are not in a relevant order of magnitude. However the effect size clearly indicates that the results obtained by each profile are statistically separated. Since we performed our test under a simple benchmark we cannot, therefore, be sure how the processing times scale under a more complex benchmark. It is possible that while in our case the differences are between a second, these differences can scale to hours or more under a more complex task.
 
 ## Conclusion
 
