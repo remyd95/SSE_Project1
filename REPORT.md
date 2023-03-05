@@ -108,28 +108,20 @@ To run the necessary test for statistical significance we needed to confirm that
 
 We therefore run a Shapiro-Wilk test to confirm normality. The p-values obtained from the test are displayed in the following table.
 
- 
-
 | Powersaver Energy | Balanced Energy | Performance Energy | | Powersaver Time | Balanced Time | Performance Time |
 |----------------------|--------------------|-----------------------|-|--------------------|------------------|---------------------|
 | 0.005 | 0.413 | 0.346 | | 0.000004 | 0.009 | 0.239 |
  
 
-As can be seen not all data is normally distributed. We therefore tried to remove the outliers using z-scores, and removing points with a score higher than three standard deviations. However, only the time data for the Balanced profile became normal after outlier removal. We therefore performed a sanity check by rerunning the whole experiment, however, we got similar results regarding the data normality distributions as shown in Table X.
+As can be seen not all data is normally distributed at a significance level of 5%. We therefore tried to remove the outliers using z-scores, and removing points with a score higher than three standard deviations. However, only the time data for the Balanced profile became normal after outlier removal. We therefore performed a sanity check by rerunning the whole experiment, however, we got similar results regarding the data normality distributions as shown in following table.
 
- 
-
-TABLE WITH SHAPIRO TEST FOR FIRST EXPERIMENT
-
- 
+| Powersaver Energy | Balanced Energy | Performance Energy | | Powersaver Time | Balanced Time | Performance Time |
+|----------------------|--------------------|-----------------------|-|--------------------|------------------|---------------------|
+| 0.003 | 0.130 | 0.104 | | 0.000003 | 0.094 | 0.00006 |
 
 Therefore we moved forward concluding that not all data distributions are normal. 
 
- 
-
 ### Statistical Significance and Effect Size 
-
- 
 
 We checked the statistical significance of the differences between the three profiles by using a two-sided Welsch t-test or Manney-Wittney U-test depending on the normality of the data. 
 
