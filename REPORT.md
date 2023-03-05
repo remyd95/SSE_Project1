@@ -52,9 +52,9 @@ The experiments were executed on an HP ZBook Studio G4 with an Intel i7-7700HQ p
 The results obtained for each profile are presented in the following table.
 
 
-| Header 1        | Header 2                       || Header 3                       ||
-| Subheader 2.1  | Subheader 2.2  | Subheader 3.1  | Subheader 3.2  |
-|-----------------|----------------|----------------|----------------|----------------|
+| Header 1        | Header 2                        | Header 3                       |
+| Subheader 2.1   | Subheader 2.2  | Subheader 3.1  | Subheader 3.2                  |
+|-----------------|----------------|----------------|--------------------------------|
  
 
 ### Exploratory Analysis
