@@ -1,0 +1,4 @@
+psutil
+tensorflow-model-optimization
+google-cloud-bigquery
+cloud-tpu-client
