@@ -110,8 +110,9 @@ We therefore run a Shapiro-Wilk test to confirm normality. The p-values obtained
 
  
 
-TABLE TO BE INSERTED
-
+| Powersaver Energy | Balanced Energy | Performance Energy | | Powersaver Time | Balanced Time | Performance Time |
+|----------------------|--------------------|-----------------------|-|--------------------|------------------|---------------------|
+| 0.005 | 0.413 | 0.346 | | 0.000004 | 0.009 | 0.239 |
  
 
 As can be seen not all data is normally distributed. We therefore tried to remove the outliers using z-scores, and removing points with a score higher than three standard deviations. However, only the time data for the Balanced profile became normal after outlier removal. We therefore performed a sanity check by rerunning the whole experiment, however, we got similar results regarding the data normality distributions as shown in Table X.
