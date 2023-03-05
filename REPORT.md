@@ -135,19 +135,16 @@ We checked the statistical significance of the differences between the three pro
 
 Of these results, only the difference in energy consumption between the Balanced and Performance profile is not significant. We therefore moved to check first the difference in medians between the energy consumption of the Performance and Powersaver profile, which is 387 J, and between the Balanced and Powersaver profile, which is 386 J. In both cases, the difference is of three orders of magnitude. The difference in time, instead, is always below 1 second. 
 
- 
-
-ADD A TABLE WITH DIFFERENCES 
-
- 
+| Balanced - Powersaver Energy | Performance - Powersaver Energy | | Balanced - Performance (Mean) Time | Powersaver - Balanced Time | Powersaver - Performance Time |
+|----------------------|--------------------|-|--------------------|------------------|---------------------|
+| $$386.66$$ | $$387.66$$ | | $$0.054$$ | $$0.717$$ | $$0.790$$ |
 
 We also computed the pair percentages as reported in the following table. 
 
- 
+| Balanced - Powersaver Energy | Performance - Powersaver Energy | | Balanced - Performance Time | Powersaver - Balanced Time | Powersaver - Performance Time |
+|----------------------|--------------------|-|--------------------|------------------|---------------------|
+| $$100%$$ | $$100%$$ | | $$14%$$ | $$100%$$ | $$100%$$ |
 
-ADD TABLE PAIR PERCENTAGES
-
- 
 
 Finally, we computed the Choen's or Cliff's delta, again depending on the normality of the data. Each delta result indicates that the difference of the distributions is large, in the case of the times of the Balanced and Performance profile, for example, Choen's delta indicates that the results are generally separated by almost an entire standard deviation.
 
