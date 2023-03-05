@@ -57,7 +57,21 @@ TABLE OF RESULTS
 
 ### Exploratory Analysis
 
-We visualized the data to gain some insights into its structure. As can be seen in Figure (ADD FIGURES ERRORBARS), it seems that the data is structured as expected, with the Powersaver profile being the most energy efficient and costly in terms of time and the Performance profile being the fastest but least energy efficient. However to draw any conclusive interpretation we need to understand the statistical significance of the results. To do that we explored the data distribution using a box plot and a violin plot. To run the necessary test for statistical significance we needed to confirm that the data is normal. As seen in the distribution plots this is hard to conclude just from the visualizations. We therefore run a Shapiro-Wilk test to confirm normality. The p-values obtained from the test are displayed in the following table.
+We visualized the data to gain some insights into its structure. As can be seen in Figure (ADD FIGURES ERRORBARS), it seems that the data is structured as expected, with the Powersaver profile being the most energy efficient and costly in terms of time and the Performance profile being the fastest but least energy efficient. 
+
+![lineplots](https://raw.githubusercontent.com/remyd95/SSE_Project1/main/images/lineplots.png)
+*Figure 1.*
+
+However to draw any conclusive interpretation we need to understand the statistical significance of the results. To do that we explored the data distribution using a box plot and a violin plot. To run the necessary test for statistical significance we needed to confirm that the data is normal. As seen in the distribution plots this is hard to conclude just from the visualizations. 
+
+![boxplots_violinplots](https://raw.githubusercontent.com/remyd95/SSE_Project1/main/images/boxplot_violinplot.png)
+*Figure 2.*
+
+![kde](https://raw.githubusercontent.com/remyd95/SSE_Project1/main/images/kde.png)
+*Figure 3.*
+
+
+We therefore run a Shapiro-Wilk test to confirm normality. The p-values obtained from the test are displayed in the following table.
 
  
 
