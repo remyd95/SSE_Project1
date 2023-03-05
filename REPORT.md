@@ -52,8 +52,8 @@ The experiments were executed on an HP ZBook Studio G4 with an Intel i7-7700HQ p
 The results obtained for each profile are presented in the following table.
 
 
-| Powersaver Energy(J) | Balanced Energy(J) | Performance Energy(J) || Powersaver Energy(J) | Balanced Energy(J) | Performance Energy(J) |
-|----------------------|--------------------|-----------------------||----------------------|--------------------|-----------------------|
+| Powersaver Energy(J) | Balanced Energy(J) | Performance Energy(J) | | Powersaver Energy(J) | Balanced Energy(J) | Performance Energy(J) |
+|----------------------|--------------------|-----------------------|-|----------------------|--------------------|-----------------------|
  
 
 ### Exploratory Analysis
