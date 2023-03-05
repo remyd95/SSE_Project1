@@ -183,51 +183,20 @@ In this work, we have motivated the need for energy-efficient solutions, especia
 
 
 ## References
-[1] Hayri Acar, G ̈ulfem I Alptekin, Jean-Patrick Gelas, and Parisa Ghodous.
-The Impact of Source Code in Software on Power Consumption. Interna-
-tional Journal of Electronic Business Management, 14:42–52, 2016.
+[1] Hayri Acar, G ̈ulfem I Alptekin, Jean-Patrick Gelas, and Parisa Ghodous. The Impact of Source Code in Software on Power Consumption. International Journal of Electronic Business Management, 14:42–52, 2016.
 
+[2] Coral Calero and Mario Piattini. Introduction to Green in Software Engineering, pages 3–27. Springer International Publishing, Cham, 2015.
 
-[2] Coral Calero and Mario Piattini. Introduction to Green in Software Engi-
-neering, pages 3–27. Springer International Publishing, Cham, 2015.
+[3] Eva Garc ́ıa-Mart ́ın, Crefeda Faviola Rodrigues, Graham Riley, and H ̊akan Grahn. Estimation of energy consumption in machine learning. Journal of Parallel and Distributed Computing, 134:75–88, 2019.
 
+[4] Erik Jagroep, Jan Martijn E. M. van der Werf, Slinger Jansen, Miguel Ferreira, and Joost Visser. Profiling energy profilers. In Proceedings of the 30th Annual ACM Symposium on Applied Computing, SAC ’15, page 2198–2203, New York, NY, USA, 2015. Association for Computing Machinery.
 
-[3] Eva Garc ́ıa-Mart ́ın, Crefeda Faviola Rodrigues, Graham Riley, and H ̊akan
-Grahn. Estimation of energy consumption in machine learning. Journal of
-Parallel and Distributed Computing, 134:75–88, 2019.
+[5] Mohit Kumar, Xingzhou Zhang, Liangkai Liu, Yifan Wang, and Weisong Shi. Energy-efficient machine learning on the edges. In 2020 IEEE International Parallel and Distributed Processing Symposium Workshops (IPDPSW), pages 912–921, 2020.3
 
+[6] Stefan Naumann, Markus Dick, Eva Kern, and Timo Johann. The greensoft model: A reference model for green and sustainable software and its engineering. Sustainable Computing: Informatics and Systems, 1(4):294–304, 2011.
 
-[4] Erik Jagroep, Jan Martijn E. M. van der Werf, Slinger Jansen, Miguel Fer-
-reira, and Joost Visser. Profiling energy profilers. In Proceedings of the 30th
-Annual ACM Symposium on Applied Computing, SAC ’15, page 2198–2203,
-New York, NY, USA, 2015. Association for Computing Machinery.
-
-
-[5] Mohit Kumar, Xingzhou Zhang, Liangkai Liu, Yifan Wang, and Weisong
-Shi. Energy-efficient machine learning on the edges. In 2020 IEEE
-International Parallel and Distributed Processing Symposium Workshops
-(IPDPSW), pages 912–921, 2020.3
-
-
-[6] Stefan Naumann, Markus Dick, Eva Kern, and Timo Johann. The greensoft
-model: A reference model for green and sustainable software and its engi-
-neering. Sustainable Computing: Informatics and Systems, 1(4):294–304,
-2011.
-
-[7] Carole-Jean Wu, Ramya Raghavendra, Udit Gupta, Bilge Acun, Newsha
-Ardalani, Kiwan Maeng, Gloria Chang, Fiona Aga, Jinshi Huang, Charles
-Bai, Michael Gschwind, Anurag Gupta, Myle Ott, Anastasia Melnikov, Sal-
-vatore Candido, David Brooks, Geeta Chauhan, Benjamin Lee, Hsien-Hsin
-Lee, Bugra Akyildiz, Maximilian Balandat, Joe Spisak, Ravi Jain, Mike
-Rabbat, and Kim Hazelwood. Sustainable ai: Environmental implications,
-challenges and opportunities. In D. Marculescu, Y. Chi, and C. Wu, editors,
-Proceedings of Machine Learning and Systems, volume 4, pages 795–813,
-2022.
+[7] Carole-Jean Wu, Ramya Raghavendra, Udit Gupta, Bilge Acun, Newsha Ardalani, Kiwan Maeng, Gloria Chang, Fiona Aga, Jinshi Huang, Charles Bai, Michael Gschwind, Anurag Gupta, Myle Ott, Anastasia Melnikov, Salvatore Candido, David Brooks, Geeta Chauhan, Benjamin Lee, Hsien-Hsin Lee, Bugra Akyildiz, Maximilian Balandat, Joe Spisak, Ravi Jain, Mike Rabbat, and Kim Hazelwood. Sustainable ai: Environmental implications, challenges and opportunities. In D. Marculescu, Y. Chi, and C. Wu, editors, Proceedings of Machine Learning and Systems, volume 4, pages 795–813, 2022.
 
 [8] Wenninger, Simon; Kaymakci, Can; Wiethe, Christian; Römmelt, Jörg; Baur, Lukas; Häckel, Björn; and Sauer, Alexander, "How Sustainable is Machine Learning in Energy Applications? – The Sustainable Machine Learning Balance Sheet" (2022). Wirtschaftsinformatik 2022 Proceedings.
 
-[9] SA Budennyy, VD Lazarev, NN Zakharenko, AN Korovin, OA Plosskaya,
-DV Dimitrov, VS Akhripkin, IV Pavlov, IV Oseledets, IS Barsola, et al.
-Eco2ai: carbon emissions tracking of machine learning models as the first
-step towards sustainable ai. In Doklady Mathematics, pages 1–11. Springer,
-2023.
+[9] SA Budennyy, VD Lazarev, NN Zakharenko, AN Korovin, OA Plosskaya, DV Dimitrov, VS Akhripkin, IV Pavlov, IV Oseledets, IS Barsola, et al. Eco2ai: carbon emissions tracking of machine learning models as the first step towards sustainable ai. In Doklady Mathematics, pages 1–11. Springer, 2023.
