@@ -110,14 +110,14 @@ We therefore run a Shapiro-Wilk test to confirm normality. The p-values obtained
 
 | Powersaver Energy | Balanced Energy | Performance Energy | | Powersaver Time | Balanced Time | Performance Time |
 |----------------------|--------------------|-----------------------|-|--------------------|------------------|---------------------|
-| 0.005 | 0.413 | 0.346 | | $$4\cdot 10^(-6)$$ | 0.009 | 0.239 |
+| 0.005 | 0.413 | 0.346 | | $$4\cdot 10^{-6}$$ | 0.009 | 0.239 |
  
 
 As can be seen not all data is normally distributed at a significance level of 5%. We therefore tried to remove the outliers using z-scores, and removing points with a score higher than three standard deviations. However, only the time data for the Balanced profile became normal after outlier removal. We therefore performed a sanity check by rerunning the whole experiment, however, we got similar results regarding the data normality distributions as shown in following table.
 
 | Powersaver Energy | Balanced Energy | Performance Energy | | Powersaver Time | Balanced Time | Performance Time |
 |----------------------|--------------------|-----------------------|-|--------------------|------------------|---------------------|
-| 0.003 | 0.130 | 0.104 | | | $$3\cdot 10^(-6)$$ | 0.094 | $$6\cdot 10^(-5)$$ |
+| 0.003 | 0.130 | 0.104 | | | $$3\cdot 10^{-6}$$ | 0.094 | $$6\cdot 10^{-5}$$ |
 
 Therefore we moved forward concluding that not all data distributions are normal. 
 
@@ -127,7 +127,7 @@ We checked the statistical significance of the differences between the three pro
 
 | Welsch t-test  Performance vs Balanced | Manney-Wittney U-test Powersaver vs Balanced | Manney-Wittney U-test Powersaver vs Balanced
 |----------------------|--------------------|-----------------------|
-| 0.158 | $$3\cdot 10^(-11)$$ | $$3\cdot 10^(-11)$$|
+| 0.158 | $$3\cdot 10^{-11}$$ | $$3\cdot 10^{-11}$$|
  
 
 Of these results, only the difference in energy consumption between the Balanced and Performance profile is not significant. We therefore moved to check first the difference in medians between the energy consumption of the Performance and Powersaver profile, which is 387 J, and between the Balanced and Powersaver profile, which is 386 J. In both cases, the difference is of three orders of magnitude. The difference in time, instead, is always below 1 second. 
