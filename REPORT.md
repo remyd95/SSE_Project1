@@ -83,6 +83,7 @@ The results obtained for each profile are presented in the following table.
 |      480.944 |    754.279 |       741.552 | |      37.8995 |    37.1383 |       36.9483 |
 |      424.757 |    755.579 |       760.158 | |      37.8235 |    37.184  |       36.9367 |
 
+*Table 1. Results for energy consumption and processing time running the tests for each profile with GPU use.* 
 
 ### Exploratory Analysis
 
@@ -109,7 +110,7 @@ We therefore run a Shapiro-Wilk test to confirm normality. The p-values obtained
 |----------------------|--------------------|-----------------------|-|--------------------|------------------|---------------------|
 | $$0.005$$ | $$0.413$$ | $$0.346$$ | | $$4\cdot 10^{-6}$$ | $$0.009$$ | $$0.239$$ |
 
-*Table 1. p-values for the Shapiro-Wilk test performed on the obtained data.* 
+*Table 2. p-values for the Shapiro-Wilk test performed on the obtained data.* 
 
 As can be seen not all data is normally distributed at a significance level of 5%. We therefore tried to remove the outliers using z-scores, by removing points with a score higher than three standard deviations. However, only the time data for the Balanced profile became normal after outlier removal. We therefore performed a sanity check by rerunning the whole experiment for every profile. However, we got similar results and the data distributions that were not normal generally remained not normal, as can be seen in the following table.
 
@@ -117,7 +118,7 @@ As can be seen not all data is normally distributed at a significance level of 5
 |----------------------|--------------------|-----------------------|-|--------------------|------------------|---------------------|
 | $$0.003$$ | $$0.130$$ | $$0.104$$ | | $$3\cdot 10^{-6}$$ | $$0.094$$ | $$6\cdot 10^{-5}$$ |
 
-*Table 2. p-values for the Shapiro-Wilk test performed on the data obtained from running the experiments a second time.* 
+*Table 3 p-values for the Shapiro-Wilk test performed on the data obtained from running the experiments a second time.* 
 
 Therefore we moved forward concluding that not all data distributions are normal. 
 
