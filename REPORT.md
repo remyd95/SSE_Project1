@@ -143,7 +143,7 @@ We also computed the pair percentages as reported in the following table.
 
 | Balanced - Powersaver Energy | Performance - Powersaver Energy | | Balanced - Performance Time | Powersaver - Balanced Time | Powersaver - Performance Time |
 |----------------------|--------------------|-|--------------------|------------------|---------------------|
-| $$100\%$$ | $$100\%$$ | | $$14\%$$ | $$100\%$$ | $$100\%$$ |
+| $$100 \%$$ | $$100\%$$ | | $$14\%$$ | $$100\%$$ | $$100\%$$ |
 
 
 Finally, we computed the Choen's or Cliff's delta, again depending on the normality of the data. Each delta result indicates that the difference of the distributions is large, in the case of the times of the Balanced and Performance profile, for example, Choen's delta indicates that the results are generally separated by almost an entire standard deviation.
