@@ -118,7 +118,7 @@ As can be seen not all data is normally distributed at a significance level of 5
 |----------------------|--------------------|-----------------------|-|--------------------|------------------|---------------------|
 | $$0.003$$ | $$0.130$$ | $$0.104$$ | | $$3\cdot 10^{-6}$$ | $$0.094$$ | $$6\cdot 10^{-5}$$ |
 
-*Table 3 p-values for the Shapiro-Wilk test performed on the data obtained from running the experiments a second time.* 
+*Table 3. p-values for the Shapiro-Wilk test performed on the data obtained from running the experiments a second time.* 
 
 Therefore we moved forward concluding that not all data distributions are normal. 
 
