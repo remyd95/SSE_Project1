@@ -117,7 +117,7 @@ As can be seen not all data is normally distributed at a significance level of 5
 
 | Powersaver Energy | Balanced Energy | Performance Energy | | Powersaver Time | Balanced Time | Performance Time |
 |----------------------|--------------------|-----------------------|-|--------------------|------------------|---------------------|
-| $$0.003$$ | $$0.130$$ | $$0.104$$ | | | $$3\cdot 10^{-6}$$ | $$0.094$$ | $$6\cdot 10^{-5}$$ |
+| $$0.003$$ | $$0.130$$ | $$0.104$$ | | $$3\cdot 10^{-6}$$ | $$0.094$$ | $$6\cdot 10^{-5}$$ |
 
 Therefore we moved forward concluding that not all data distributions are normal. 
 
