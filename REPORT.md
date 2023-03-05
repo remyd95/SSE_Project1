@@ -72,7 +72,7 @@ To run the necessary test for statistical significance we needed to confirm that
 
 ![kde](https://raw.githubusercontent.com/remyd95/SSE_Project1/main/images/kde.png)
 
-*Figure 3. Kernel density plots to further highlight the nature of the data distributions for energy and time consumptions of each profile.*
+*Figure 3. Kernel density plots to further highlight the nature of the data distributions for energy (a) and time (b) consumptions of each profile.*
 
 
 We therefore run a Shapiro-Wilk test to confirm normality. The p-values obtained from the test are displayed in the following table.
