@@ -88,7 +88,7 @@ The results obtained for each profile are presented in the following table.
 
 ### Exploratory Analysis
 
-We visualized the data to gain some insights into its structure. As can be seen in Figure (ADD FIGURES ERRORBARS), it seems that the data is structured as expected, with the Powersaver profile being the most energy efficient and costly in terms of time and the Performance profile being the fastest but least energy efficient. 
+We visualized the data to gain some insights into its structure. As can be seen in Figure 1, it seems that the data is structured as expected, with the Powersaver profile being the most energy efficient and costly in terms of time and the Performance profile being the fastest but least energy efficient. 
 
 ![lineplots](https://raw.githubusercontent.com/remyd95/SSE_Project1/main/images/lineplots.png)
 *Figure 1. (a) Energy consumption in Joule of each power profile; (b) Processing time in seconds of each power profile; (c) Time vs Energy of each profile displayed in order to identify the Pareto frontier.*
@@ -105,50 +105,60 @@ To run the necessary test for statistical significance we needed to confirm that
 
 *Figure 3. Kernel density plots to further highlight the nature of the data distributions for energy (a) and time (b) consumptions of each profile.*
 
-
-We therefore run a Shapiro-Wilk test to confirm normality. The p-values obtained from the test are displayed in the following table.
+We therefore run a Shapiro-Wilk test to confirm normality. The p-values obtained from the tests are displayed in the following table.
 
 | Powersaver Energy | Balanced Energy | Performance Energy | | Powersaver Time | Balanced Time | Performance Time |
 |----------------------|--------------------|-----------------------|-|--------------------|------------------|---------------------|
 | $$0.005$$ | $$0.413$$ | $$0.346$$ | | $$4\cdot 10^{-6}$$ | $$0.009$$ | $$0.239$$ |
- 
 
-As can be seen not all data is normally distributed at a significance level of 5%. We therefore tried to remove the outliers using z-scores, and removing points with a score higher than three standard deviations. However, only the time data for the Balanced profile became normal after outlier removal. We therefore performed a sanity check by rerunning the whole experiment, however, we got similar results regarding the data normality distributions as shown in following table.
+*Table 1. p-values for the Shapiro-Wilk test performed on the obtained data.* 
+
+As can be seen not all data is normally distributed at a significance level of 5%. We therefore tried to remove the outliers using z-scores, by removing points with a score higher than three standard deviations. However, only the time data for the Balanced profile became normal after outlier removal. We therefore performed a sanity check by rerunning the whole experiment for every profile. However, we got similar results and the data distributions that were not normal generally remained not normal, as can be seen in the following table.
 
 | Powersaver Energy | Balanced Energy | Performance Energy | | Powersaver Time | Balanced Time | Performance Time |
 |----------------------|--------------------|-----------------------|-|--------------------|------------------|---------------------|
 | $$0.003$$ | $$0.130$$ | $$0.104$$ | | $$3\cdot 10^{-6}$$ | $$0.094$$ | $$6\cdot 10^{-5}$$ |
 
+*Table 2. p-values for the Shapiro-Wilk test performed on the data obtained from running the experiments a second time.* 
+
 Therefore we moved forward concluding that not all data distributions are normal. 
 
 ### Statistical Significance and Effect Size 
 
-We checked the statistical significance of the differences between the three profiles by using a two-sided Welsch t-test or Manney-Wittney U-test depending on the normality of the data. 
+Since we are comparing three different datasets for energy and time, one for each profile, we used the Bonferroni Correction to adjust the significance level for the statistical tests we conducted. Since we tested for a significance level of 0.05 and performed in each case, time and energy, 3 different tests, the corrected level was given by 0.05/3, which is 0.01667.
+We then checked the statistical significance of the differences between the three profiles by using a two-sided Welsch t-test or Manney-Wittney U-test depending on the normality of the data. 
 
-| Welsch t-test  Performance vs Balanced | Manney-Wittney U-test Powersaver vs Balanced | Manney-Wittney U-test Powersaver vs Balanced
+| Welsch t-test Performance vs Balanced | Manney-Wittney U-test Powersaver vs Balanced | Manney-Wittney U-test Powersaver vs Balanced
 |----------------------|--------------------|-----------------------|
 | $$0.158$$ | $$3\cdot 10^{-11}$$ | $$3\cdot 10^{-11}$$|
- 
- | Welsch t-test  Performance vs Balanced | Manney-Wittney U-test Powersaver vs Balanced | Manney-Wittney U-test Powersaver vs Balanced
+
+*Table 4. p-values for the statistical significance of the pair-wise differences between the energy data.* 
+
+| Welsch t-test Performance vs Balanced | Manney-Wittney U-test Powersaver vs Balanced | Manney-Wittney U-test Powersaver vs Balanced
 |----------------------|--------------------|-----------------------|
 | $$0.010$$ | $$3\cdot 10^{-11}$$ | $$3\cdot 10^{-11}$$|
 
+*Table 5. p-values for the statistical significance of the pair-wise differences between the time data.* 
+
 Of these results, only the difference in energy consumption between the Balanced and Performance profile is not significant. We therefore moved to check first the difference in medians between the energy consumption of the Performance and Powersaver profile, which is 387 J, and between the Balanced and Powersaver profile, which is 386 J. In both cases, the difference is of three orders of magnitude. The difference in time, instead, is always below 1 second. 
 
-| Balanced - Powersaver Energy | Performance - Powersaver Energy | | Balanced - Performance (Mean) Time | Powersaver - Balanced Time | Powersaver - Performance Time |
+| Balanced - Powersaver (Median) Energy | Performance - Powersaver (Median) Energy | | Balanced - Performance (Mean) Time | Powersaver - Balanced (Median) Time | Powersaver - Performance (Median) Time |
 |----------------------|--------------------|-|--------------------|------------------|---------------------|
 | $$386.66$$ | $$387.66$$ | | $$0.054$$ | $$0.717$$ | $$0.790$$ |
 
-We also computed the pair percentages as reported in the following table. 
+*Table 6. Pair-wise median or mean difference between the data, depending on the normality of the data.* 
 
-| Balanced - Powersaver Energy | Performance - Powersaver Energy | | Balanced - Performance Time | Powersaver - Balanced Time | Powersaver - Performance Time |
+We then computed the percentage change or the pairwise difference between the data, with the pairwise difference computed as the percentage of data pairs where the first element is greater than the second. 
+
+| Balanced - Powersaver Energy (Pairwise Difference) | Performance - Powersaver Energy (Pairwise Difference) | | Balanced - Performance Time (Percentage Change) | Powersaver - Balanced Time (Pairwise Difference) | Powersaver - Performance Time (Pairwise Difference) |
 |----------------------|--------------------|-|--------------------|------------------|---------------------|
 | 100% | 100% | | 14% | 100% | 100% |
 
+*Table 7. Pair-wise median or mean difference between the data, depending on the normality of the data.* 
 
-Finally, we computed the Choen's or Cliff's delta, again depending on the normality of the data. Each delta result indicates that the difference of the distributions is large, in the case of the times of the Balanced and Performance profile, for example, Choen's delta indicates that the results are generally separated by almost an entire standard deviation.
+Finally, we computed the Choen's or Cliff's delta, again depending on the normality of the data. Each Cliff's delta result indicated that the difference of the distributions is large, each with a score of 1. In the case of the times of the Balanced and Performance profile, Choen's delta also indicated that the distributions are separated, with a score of 0.985, signifying a separation of almost an entire standard deviation.
 
-<!-- argue about practical signifiance (This is in the discussion or as a new section in results not sure)-->
+### Practical Signifiance 
 
 
 ## Discussion
