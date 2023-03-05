@@ -3,20 +3,17 @@
 ## Requirements
 - Linux OS (Tested on Ubuntu 22.04)
 - Python3.10
-- CUDA
-- cuDNN
-- [TensorFlow](https://www.tensorflow.org/install/pip#linux)
-- [perfzero](https://github.com/tensorflow/benchmarks)
-- [powerstat](https://snapcraft.io/install/powerstat/ubuntu)
-- [psutil](https://pypi.org/project/psutil/)
+<!-- - [psutil](https://pypi.org/project/psutil/)
 - [tensorflow-model-optimization](https://www.tensorflow.org/model_optimization/guide/install)
 - [python-bigquery](https://github.com/googleapis/python-bigquery)
-- [cloud-tpu-client](https://pypi.org/project/cloud-tpu-client/)
+- [cloud-tpu-client](https://pypi.org/project/cloud-tpu-client/) -->
 
 ## Installation
-- Make sure to have all the requirements installed.
-- Place the perfzero folder inside the root folder of this directory.
-- Run with 'python3 energyprofile.py <#experiments/mode>'.
+- Make sure you install [CUDA, cuDNN, and TensorFlow](https://www.tensorflow.org/install/pip#linux).
+- Run `git clone https://github.com/tensorflow/benchmarks.git` inside the root directory to install the [perfzero benchmark](https://github.com/tensorflow/benchmarks).
+- Install [powerstat](https://snapcraft.io/install/powerstat/ubuntu) using `sudo apt install powerstat`
+- Run `pip install -r requirements.txt` to install the remainder of dependencies
+- Run with `python3 energyprofile.py <#experiments>` which runs #experiments * 3 (balanced, power-saving, performance) times with a default of 5 and a minimum of 1.
 
 ## Manual Preparations
 - Close all user processes.
